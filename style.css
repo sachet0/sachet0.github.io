@@ -8,7 +8,7 @@ body {
     color: #cecece;
     font-family: Fira Sans, Mukta, Roboto, Arial, sans-serif;
     font-size: 115%;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 header h1 {
@@ -35,17 +35,21 @@ main h2{
 }
 
 main p {
-    margin: 2%;
+    margin: 15px;
     flex: auto;
     text-align: left;
 }
-
-ul {
-    padding-left: 8%;
+.section {
+    padding-left: 30px;
 }
 
-footer{
-    padding-top: 100px;
+ul {
+    padding-left: 70px;
+}
+
+footer {
+    padding-top: 60px;
+    padding-bottom: 20px;
     font-size: 20px;
     text-align: center;
 }
@@ -57,7 +61,6 @@ footer a {
 /* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
-    float: none;
     width: 100%;
     font-family: Roboto Mono;
 }
@@ -81,10 +84,22 @@ footer a {
     font-weight: bold;
 }
 
-.topnav h4 {
-    position: absolute; 
+header #self {
     right: 2%;
+    position: absolute;
     padding: 20px;
     color: #f1935c;
+    font-family: Roboto Mono;
 }
+
+@media screen and (max-width: 800px) {
+    header #self {
+        position: relative;
+        padding: 20px;
+        color: #f1935c;
+        float: right;
+        font-family: Roboto Mono;
+    }
+}
+
 
