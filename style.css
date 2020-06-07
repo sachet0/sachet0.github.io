@@ -26,7 +26,7 @@ header h2 {
 
 main {
     margin: 2% 8% 2% 8%;
-    padding: 20px;
+    padding: 1% 8% 0% 8%;
 }
 
 main h2{
@@ -99,6 +99,13 @@ header #self {
         color: #f1935c;
         float: right;
         font-family: Roboto Mono;
+    }
+    main {
+        margin: 2%;
+        padding: 5px;
+    }
+    .section {
+        padding-left: 1.5%;
     }
 }
 
