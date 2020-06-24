@@ -1,112 +1,110 @@
 * {
-    padding: 0;
-    margin: 0;
-    background-color: #161616;
+  padding: 0;
+  margin: 0;
+  background-color: #161616;
 }
 
 body {
-    color: #cecece;
-    font-family: Fira Sans, Mukta, Roboto, Arial, sans-serif;
-    font-size: 115%;
-    line-height: 1.8;
+  color: #cecece;
+  font-family: Fira Sans, Mukta, Roboto, Arial, sans-serif;
+  font-size: 115%;
+  line-height: 1.8;
 }
 
 header h1 {
-    text-align: center;
-    padding-top: 50px; 
-    font-family: Roboto Mono;
-    color: #f1935c;
-} 
-
-header h2 {
-    text-align: center;
-    font-family: Roboto Mono;
-    color: #f1935c;
-} 
-
-main {
-    margin: 2% 8% 2% 8%;
-    padding: 1% 8% 0% 8%;
+  text-align: center;
+  padding-top: 50px;
+  font-family: Roboto Mono;
+  color: #f1935c;
 }
 
-main h2{
-    font-style: italic;
-    margin: 10px;
+header h2 {
+  text-align: center;
+  font-family: Roboto Mono;
+  color: #f1935c;
+}
+
+main {
+  margin: 2% 8% 2% 8%;
+  padding: 1% 8% 0% 8%;
+}
+
+main h2 {
+  font-style: italic;
+  margin: 10px;
 }
 
 main p {
-    margin: 15px;
-    flex: auto;
-    text-align: left;
+  margin: 15px;
+  flex: auto;
+  text-align: left;
 }
 .section {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 ul {
-    padding-left: 70px;
+  padding-left: 70px;
 }
 
 footer {
-    padding-top: 60px;
-    padding-bottom: 20px;
-    font-size: 20px;
-    text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 footer a {
-    text-decoration: none;
-    color: #cecece;
+  text-decoration: none;
+  color: #cecece;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    overflow: hidden;
-    width: 100%;
-    font-family: Roboto Mono;
+  overflow: hidden;
+  width: 100%;
+  font-family: Roboto Mono;
 }
-  
+
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    color: #cecece;
-    text-align: center;
-    padding-left: 35px;
-    padding-top: 20px;
-    font-size: 17px;
-    text-decoration: none;
+  float: left;
+  color: #96e8c7;
+  text-align: center;
+  padding-left: 35px;
+  padding-top: 20px;
+  font-size: 17px;
+  text-decoration: none;
 }
 
 .topnav a:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .topnav a.active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-header #self {
-    right: 2%;
-    position: absolute;
-    padding: 20px;
-    color: #f1935c;
-    font-family: Roboto Mono;
+header #name {
+  right: 2%;
+  position: absolute;
+  padding: 20px;
+  color: #f1935c;
+  font-family: Roboto Mono;
 }
 
 @media screen and (max-width: 800px) {
-    header #self {
-        position: relative;
-        padding: 20px;
-        color: #f1935c;
-        float: right;
-        font-family: Roboto Mono;
-    }
-    main {
-        margin: 2%;
-        padding: 5px;
-    }
-    .section {
-        padding-left: 1.5%;
-    }
+  header #name {
+    position: relative;
+    padding: 20px;
+    color: #f1935c;
+    float: right;
+    font-family: Roboto Mono;
+  }
+  main {
+    margin: 2%;
+    padding: 5px;
+  }
+  .section {
+    padding-left: 1.5%;
+  }
 }
-
-
