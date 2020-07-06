@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!--Webpage title-->
-    <title>
-      My Webpage!
-    </title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!--Stylesheets. Includes styles.css and font awesome icons-->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Webpage!</title>
+    <link rel="stylesheet" href="homeStyle.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -40,54 +35,27 @@
       <!--Navigation Bar-->
 
       <h3 id="name">Sachet Dawadi</h3>
+
+      <div id="greet">
+        <h1>Hello! <i class="fa fa-smile-o"></i></h1>
+        <h2>Welcome to my Webpage.</h2>
+      </div>
+
       <div class="topnav">
         <!--Name on top right-->
-
-        <a class="active" href="web.html">home</a>
+        <a class="active" href="#index.html">home</a>
         <a>/</a>
-        <a href="#about">about</a>
+        <a href="about.html">about</a>
         <a>/</a>
         <a href="#projects">projects</a>
         <a>/</a>
         <a href="#contact">contact</a>
       </div>
-
-      <h1>Hello! <i class="fa fa-smile-o"></i></h1>
-      <h2>Welcome to my Webpage</h2>
-    </header>
-
-    <main>
-      <!--About Me section-->
-      <h2>_ About Me</h2>
-      <div class="section">
-        <p>
-          My name is Sachet. I am a Computer Science student in Ryerson
-          University. Currently I'm in my 2nd year of a 4 year program.
-        </p>
-
-        <p>
-          Over the years I have aquired knowledge in several skills and
-          languages. Some of them are:
-        </p>
-        <ul>
-          <li>Python</li>
-          <li>Java</li>
-          <li>HTML and CSS</li>
-        </ul>
-        <p>
-          I am interested in Computers as they are a core part of our daily
-          lives and we interact with them all the time.
-        </p>
+      <div id="circles">
+          <span class="circle" style="background-color: #F18F5C;"></span>
+          <span class="circle" style="background-color: #5DC9BB;"></span>
+          <span class="circle" style="background-color: #96E8C7;"></span>
       </div>
-    </main>
-
-    <!--Bottom footer section with links-->
-    <footer>
-      <p>
-        [<a href="https://www.github.com/sachet0">
-          <i class="fa fa-github" style="font-size: 25px;"></i> My Github</a
-        >]
-      </p>
-    </footer>
+    </header>
   </body>
 </html>
