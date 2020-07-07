@@ -9,24 +9,29 @@ body {
   font-family: Fira Sans, Mukta, Roboto, Arial, sans-serif;
   font-size: 115%;
   line-height: 1.8;
+  /* top right bottom left*/
+  padding: 2% 2% 2% 2%;
 }
 
-header h1 {
+#greet {
   text-align: center;
+  font-family: Roboto Mono;
+  color: #f1935c;
+  font-weight: bold;
   padding-top: 50px;
-  font-family: Roboto Mono;
-  color: #f1935c;
 }
 
-header h2 {
-  text-align: center;
-  font-family: Roboto Mono;
+#name {
   color: #f1935c;
+  font-family: Roboto Mono;
+  font-weight: bold;
+  position: absolute;
+  right: 5%;
 }
 
 main {
-  margin: 2% 8% 2% 8%;
-  padding: 1% 8% 0% 8%;
+  /* top right bottom left*/
+  padding: 2% 10% 2% 10%;
 }
 
 main h2 {
@@ -36,11 +41,21 @@ main h2 {
 
 main p {
   margin: 15px;
-  flex: auto;
   text-align: left;
 }
-.section {
+
+#section {
   padding-left: 30px;
+  padding-top: 20px;
+  clear: both;
+}
+
+#projectImg {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  margin-right: 20px;
+  float: left;
 }
 
 ul {
@@ -48,10 +63,10 @@ ul {
 }
 
 footer {
-  padding-top: 60px;
-  padding-bottom: 20px;
-  font-size: 20px;
+  padding-top: 5%;
+  padding-bottom: 2%;
   text-align: center;
+  clear: both;
 }
 footer a {
   text-decoration: none;
@@ -70,9 +85,7 @@ footer a {
   float: left;
   color: #96e8c7;
   text-align: center;
-  padding-left: 35px;
-  padding-top: 20px;
-  font-size: 17px;
+  padding-left: 1.5%;
   text-decoration: none;
 }
 
@@ -84,27 +97,23 @@ footer a {
   font-weight: bold;
 }
 
-header #name {
-  right: 2%;
-  position: absolute;
-  padding: 20px;
-  color: #f1935c;
-  font-family: Roboto Mono;
-}
-
 @media screen and (max-width: 800px) {
   header #name {
     position: relative;
-    padding: 20px;
-    color: #f1935c;
+    padding: 15px;
     float: right;
-    font-family: Roboto Mono;
+  }
+  body {
+    font-size: 100%;
+  }
+  .topnav {
+    width: 75%;
   }
   main {
-    margin: 2%;
+    margin: 1.5%;
     padding: 5px;
   }
-  .section {
+  #section {
     padding-left: 1.5%;
   }
 }
