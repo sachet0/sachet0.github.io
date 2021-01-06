@@ -1,7 +1,7 @@
 body {
 	background-color: #161616;
 	color: #cecece;
-	font-family: Fira Sans, Mukta, Roboto, Arial, sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 	font-size: 115%;
 	line-height: 1.8;
 	/* top right bottom left*/
@@ -11,6 +11,7 @@ body {
 header {
 	font-family: Roboto Mono;
 	color: #f1935c;
+	/* font-weight: 400; */
 }
 
 #greet {
@@ -51,10 +52,6 @@ main p {
 	margin: 5px;
 }
 
-#Project_section p {
-	
-}
-
 #projectImg {
 	width: 200px;
 	height: 200px;
@@ -81,7 +78,7 @@ footer a {
 /* Add a black background color to the top navigation */
 .topnav {
 	overflow: hidden;
-	font-family: Roboto mono;
+	font-family: Roboto Mono;
 }
 
 /* Style the links inside the navigation bar */
