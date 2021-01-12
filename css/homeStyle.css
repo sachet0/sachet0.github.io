@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Roboto Mono;
+  src: url("/fonts/RobotoMono-VariableFont_wght.ttf");
+}
+
 * {
   margin: 0;
   font-family: 'Roboto Mono', monospace;
@@ -41,9 +46,14 @@ header {
   padding-left: 0.5%;
 }
 
-.topnav a:hover,
+.topnav a:hover{
+  font-weight: bold;
+  font-size: larger;
+	text-shadow: 1px 1px 10px #1f684c;
+}
 .topnav a.active {
   font-weight: bold;
+  font-size: larger;
 }
 
 .circle {
@@ -52,6 +62,7 @@ header {
   border-radius: 50%;
   display: inline-block;
 }
+
 #circles {
   padding-top: 20%;
   text-align: center;
@@ -61,12 +72,15 @@ header {
   header {
     font-size: 115%;
   }
+
   #greet {
     padding-top: 25%;
   }
+
   .topnav {
     padding-top: 30%;
   }
+
   #circles {
     padding-top: 50%;
     text-align: center;

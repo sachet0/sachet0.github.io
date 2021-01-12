@@ -1,3 +1,13 @@
+@font-face {
+	font-family: Roboto Mono;
+	src: url("/fonts/RobotoMono-Regular.ttf");
+}
+
+@font-face {
+	font-family: Fira Sans;
+	src: url("/fonts/FiraSans-Regular.ttf");
+}
+
 body {
 	background-color: #161616;
 	color: #cecece;
@@ -5,6 +15,7 @@ body {
 	line-height: 1.8;
 	/* top right bottom left*/
 	padding: 1%;
+	font-size: 105%;
 }
 
 header {
@@ -86,10 +97,13 @@ footer a {
 
 .topnav a:hover {
 	font-weight: bold;
+	font-size: larger;
+	text-shadow: 1px 1px 10px #1f684c;
 }
 
 .topnav a.active {
 	font-weight: bold;
+  	font-size: larger;
 }
 
 @media screen and (max-width: 800px) {
