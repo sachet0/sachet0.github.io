@@ -87,5 +87,7 @@ footer a {
 
 .light {
 	background-color: #eeeeee;
-  color: #161616;
+  	color: #161616;
+	-webkit-filter: invert(100%);
+    	filter: invert(100%);
 }
