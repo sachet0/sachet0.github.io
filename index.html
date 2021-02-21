@@ -1,36 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>My Webpage!</title>
-<link rel="shortcut icon" href="#" /> 
-<link rel="stylesheet" href="css/homeStyle.css" />
-<link rel="stylesheet" href="fonts/fontawesome-free-5.15.1-web/css/all.min.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Sachet Webpage</title>
 </head>
 
 <body>
-<!--Header-->
-<header> 
-<!--Navigation Bar-->
-<h3 id="name">Sachet Dawadi</h3>
-<div id="greet">
-	<h1>Hello! <i class="far fa-smile"></i></h1>
-	<h2>Welcome to my Webpage.</h2>
-</div>
-<div class="topnav"> 
-	<!--Name on top right--> 
-	<a class="active" href="#"><i class="fas fa-home"></i> home</a>
-	<a>/</a> 
-	<a href="about.html"><i class="fas fa-address-card" aria-hidden="true"></i> about</a> 
-	<a>/</a> 
-	<a href="projects.html"><i class="fas fa-laptop-code"></i> projects</a> 
-</div>
-<div id="circles"> 
-	<span class="circle" style="background-color: #F18F5C;"></span> 
-	<span class="circle" style="background-color: #5DC9BB;"></span> 
-	<span class="circle" style="background-color: #96E8C7;"></span> 
-</div>
-</header>
+  <main>
+
+    <!-- Taskbar -->
+    <div id="taskbar" class="window" style="width: 100vw; position:fixed; bottom: 0px; padding: 4px;">
+      <div class="window-body" style="margin: 0px;">
+
+        <span>
+          <button style="min-width: 75px; min-height: 25px; margin: 0; padding: 0;"
+            onclick="aboutsec = document.getElementById('about'); if (aboutsec.style.display == 'block') {aboutsec.style.display = 'none'} else {aboutsec.style.display = 'block'}">
+            <b>About</b>
+          </button>
+        </span> &nbsp;&nbsp;
+        <span>
+          <button style="min-width: 85px; min-height: 25px; margin: 0; padding: 0;"
+            onclick="projectsec = document.getElementById('projects'); if (projectsec.style.display == 'block') {projectsec.style.display = 'none'} else {projectsec.style.display = 'block'}">
+            <b>Projects</b>
+          </button>
+        </span> &nbsp;&nbsp;
+        <span>
+          <button style="min-width: 75px; min-height: 25px; margin: 0; padding: 0;"
+            onclick="linkssec = document.getElementById('links'); if (linkssec.style.display == 'block') {linkssec.style.display = 'none'} else {linkssec.style.display = 'block'}">
+            <b>Links</b>
+          </button>
+        </span> &nbsp;&nbsp;
+        <span style="right: 5px; position: fixed; text-align: center; justify-content: center;">
+          <div style="box-shadow: inset -1px -1px #dfdfdf, inset 1px 1px #808080; width: 85px; height: 25px; margin: 0; padding: 0;">
+          <img style="transform: translate(-3px, 4px);" src="https://win98icons.alexmeub.com/icons/png/loudspeaker_rays-1.png"> &nbsp;&nbsp;&nbsp;&nbsp;
+            <span id="time">8:40 PM</span>
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <!-- Desktop Icons -->
+    <div style="text-align: center; line-height: 1.3;">
+      <div style="margin: 10px; position: absolute; width: fit-content; top: 2px;">
+        <img src="https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png">
+        <p style="color: white;">My Computer</p>
+      </div>
+      <div style="margin: 10px; position: absolute; width: fit-content; top: 70px">
+        <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-0.png">
+        <p style="color: white;">Documents</p>
+      </div>
+      <div style="margin: 10px; position: absolute; width: fit-content; top: 140px">
+        <img src="https://win98icons.alexmeub.com/icons/png/recycle_bin_empty-2.png">
+        <p style="color: white;">Recycle Bin</p>
+      </div>
+    </div>
+
+    <!-- Hello Window -->
+    <div class="window" style="max-width: fit-content; height: fit-content; position: absolute; top: 44px; left: 151px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Sachet Dawadi - Webpage</div>
+        <div class="title-bar-controls">
+          <button disabled aria-label="Help"></button>
+        </div>
+      </div>
+      <div class="window-body" style="padding: 2px;">
+        <p>Hello! Welcome to my webpage.</p>
+      </div>
+    </div>
+
+    <!-- About window -->
+    <div class="window" id="about" style="width: 40%; display: block; position: absolute; top: 50px; left: 455px;">
+      <div class="title-bar">
+        <div class="title-bar-text">About me</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="document.getElementById('about').style.display = 'None'"></button>
+          <button aria-label="Close" onclick="document.getElementById('about').style.display = 'None'"></button>
+        </div>
+      </div>
+      <div class="window-body" style="padding: 2px">
+        <p>Hello, I am Sachet. Currently a 2nd year Computer Science student. I like to work with computers both in
+          terms of hardware and software but software is my main focus. My interests include Artificial intelligence but
+          have yet to dive into it. I am still discovering new things about the world and learning all the time.</p>
+          <br>
+        <p>Over the years I have aquired knowledge in several skills and languages. Some of them are:</p>
+        <ul>
+          <li>Python</li>
+          <li>Linux</li>
+          <li>Java</li>
+          <li>HTML/CSS</li>
+          <li>Git</li>
+        </ul>
+        <br>
+        <p>I am currently to learning C and C++ as I heard they were good programming languages.</p>
+      </div>
+    </div>
+
+    <!-- Projects window -->
+    <div class="window" id="projects" style="width: 25%; display: block; position: absolute; top: 343px; left: 347px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Projects</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="document.getElementById('projects').style.display = 'None'"></button>
+          <button aria-label="Close" onclick="document.getElementById('projects').style.display = 'None'"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <p><a href="https://github.com/sachet0/TSXbot"><b>TSXbot</b></a> - A bot that scrapes the Toronto Stock Exchange
+          website to get the price and other data along with an image of the stock chart.</p>
+          <br>
+        <p><a href="https://github.com/sachet0/Snake"><b>Snake</b></a> - Classic snake game written in Python's Pygame
+          library.</p>
+          <br>
+        <p><a href="https://sachet.xyz/98website"><b>Personal Website</b></a> - This website. It was made using <a
+            href="https://jdan.github.io/98.css/">98.css</a> and little bit of jquery for the dragable windows.</p>
+      </div>
+    </div>
+
+    <!-- Links window -->
+    <div class="window" id="links" style="min-width: 10%; display: block; position: absolute; top: 536px; left: 184px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Links</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="document.getElementById('links').style.display = 'None'"></button>
+          <button aria-label="Close" onclick="document.getElementById('links').style.display = 'None'"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <p>
+          <a href="https://www.github.com/sachet0">
+            <i class="fab fa-github" style="font-size: 22px;"></i> Github</a>
+          &nbsp;&nbsp;
+          <br>
+          <a href="https://www.linkedin.com/in/SachetDawadi/">
+            <i class="fab fa-linkedin" style="font-size: 22px;"></i> LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: #008080;
+    line-height: 1.6;
+    font-family: "Pixelated MS Sans Serif", sans-serif;
+}
