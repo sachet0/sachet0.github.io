@@ -1,10 +1,14 @@
-$(function () {
-    $(".window").draggable();
+$(document).ready(function () {
+    $(".window").draggable({
+        cursor: "grabbing",
+        containment: "body",
+        handle: ".title-bar",
+    });
+
     $("#taskbar").draggable("disable");
-    $(".window-body").draggable("disable");
 });
 
-function setTime() { 
+function setTime() {
     document.querySelector('#time').textContent = new Date().toLocaleTimeString([], {
         timeStyle: 'short'
     });
