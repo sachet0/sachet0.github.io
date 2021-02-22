@@ -17,9 +17,11 @@ $(document).ready(function () {
                 }, 5000);
         }
     });
-
     $("#taskbar").draggable("disable");
 });
+document.getElementById('clock').onclick = function () {
+    document.getElementById('cloneZone').innerHTML = '';
+}
 
 function setTime() {
     document.querySelector('#time').textContent = new Date().toLocaleTimeString([], {
