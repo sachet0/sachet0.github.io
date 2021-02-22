@@ -11,17 +11,11 @@ $(document).ready(function () {
         },
         stop: function (event, ui) {
             clearInterval(customInter);
-            setTimeout(
-                function() {
-                  document.getElementById('cloneZone').innerHTML = '';
-                }, 5000);
+            document.getElementById('cloneZone').innerHTML = '';
         }
     });
     $("#taskbar").draggable("disable");
 });
-document.getElementById('clock').onclick = function () {
-    document.getElementById('cloneZone').innerHTML = '';
-}
 
 function setTime() {
     document.querySelector('#time').textContent = new Date().toLocaleTimeString([], {
