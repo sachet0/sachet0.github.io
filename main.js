@@ -1,8 +1,21 @@
 $(document).ready(function () {
+
     $(".window").draggable({
         cursor: "grabbing",
         containment: "body",
         handle: ".title-bar",
+        start: function (event, ui) {
+            customInter = setInterval(() => {
+               $(this).clone().appendTo('#cloneZone');
+            }, 30);
+        },
+        stop: function (event, ui) {
+            clearInterval(customInter);
+            setTimeout(
+                function() {
+                  document.getElementById('cloneZone').innerHTML = '';
+                }, 5000);
+        }
     });
 
     $("#taskbar").draggable("disable");
