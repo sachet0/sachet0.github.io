@@ -1,12 +1,12 @@
 $(document).ready(function () {
-
+    
     $(".window").draggable({
         cursor: "grabbing",
         containment: "body",
         handle: ".title-bar",
         start: function (event, ui) {
             customInter = setInterval(() => {
-               $(this).clone().appendTo('#cloneZone');
+                $(this).clone().appendTo('#cloneZone');
             }, 30);
         },
         stop: function (event, ui) {

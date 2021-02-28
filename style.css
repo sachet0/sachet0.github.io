@@ -72,11 +72,11 @@ body {
 
 #projects {
     max-width: max-content;
-    width: 400px;
-    height: 173px;
+    width: 500px;
+    height: 250px;
     position: absolute;
-    bottom: 30%;
-    left: 10%;
+    bottom: 25%;
+    left: 3.5%;
 }
 
 #links {
@@ -90,4 +90,9 @@ body {
 #Allwindows {
     width: 100vw;
     height: 100vh;
+}
+
+#lists {
+    display: flex;
+    padding-top: 15px;
 }
