@@ -3,16 +3,7 @@ $(document).ready(function () {
     $(".window").draggable({
         cursor: "grabbing",
         containment: "body",
-        handle: ".title-bar",
-        start: function (event, ui) {
-            customInter = setInterval(() => {
-                $(this).clone().appendTo('#cloneZone');
-            }, 30);
-        },
-        stop: function (event, ui) {
-            clearInterval(customInter);
-            document.getElementById('cloneZone').innerHTML = '';
-        }
+        handle: ".title-bar"
     });
     $("#taskbar").draggable("disable");
 });
